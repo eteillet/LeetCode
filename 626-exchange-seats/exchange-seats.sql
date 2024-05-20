@@ -1,6 +1,6 @@
 /* Write your T-SQL query statement below */
 
--- we add 1 from the odd Ids
+-- we add 1 to the odd Ids
 SELECT id + 1 as id, student
 FROM Seat
 WHERE id % 2 = 1 AND id <> (SELECT MAX(id) as maxId FROM Seat)
