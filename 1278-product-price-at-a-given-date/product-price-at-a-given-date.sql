@@ -15,6 +15,6 @@ last_change AS (
                             GROUP BY p2.product_id)
     )
 
-SELECT* FROM never_change
+SELECT * FROM never_change
 UNION
 SELECT * FROM last_change
